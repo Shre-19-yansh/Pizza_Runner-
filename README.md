@@ -21,12 +21,12 @@ The main aim is to prepare the data for insights into:
 ---
 
 ## 📂 Files in This Repository  
-- `customer_orders.csv` → Customer pizza orders  
+- `customer_orders.csv` → Customer pizza orders
+- `pizza_names.csv` → Pizza ID and name mapping
+- `pizza_recipes.csv` → Standard recipes for each pizza
+- `pizza_toppings.csv` → Mapping of topping ID to topping names
 - `runner_orders.csv` → Runner assignments, times, and cancellations  
 - `runners.csv` → Runner registration details  
-- `pizza_names.csv` → Pizza ID and name mapping  
-- `pizza_recipes.csv` → Standard recipes for each pizza  
-- `pizza_toppings.csv` → Mapping of topping ID to topping names  
 - `Case_Study_Solution.md` → SQL queries used for cleaning and analysis  
 - `README.md` → Project documentation  
 
