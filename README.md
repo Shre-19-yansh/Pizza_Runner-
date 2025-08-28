@@ -50,12 +50,11 @@ During the cleaning process, the following tasks were performed:
 
 ---
 ## 🔄 Process  
+
 1. Understand the schema
 - Reviewed the Entity Relationship Diagram (ERD) and table structures to comprehend how customer_orders, runner_orders, runners, pizza_names, 
   pizza_recipes, and pizza_toppings are related. This helped identify the joins required for analysis.
-  
   <img width="359" height="161" alt="image" src="https://github.com/user-attachments/assets/b3dd9d21-0f7b-4d70-afbb-4bc44f5d037c" />
-
 2. Identify data issues
 - Examined each table for missing values, inconsistent text formats, multi-value fields (like toppings, exclusions, extras), and anomalies in date,
   time, distance, and duration columns that could affect analysis.
