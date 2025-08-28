@@ -49,14 +49,25 @@ During the cleaning process, the following tasks were performed:
 - 💡 Foundation for further business recommendations  
 
 ---
-
 ## 🔄 Process  
-1. **Understand the schema** – Reviewed ERD and table relationships
-   <img width="766" height="337" alt="Screenshot 2025-08-27 191557" src="https://github.com/user-attachments/assets/cf118377-0171-4f0f-bc82-8d5ac9fca5f4" />
-3. **Identify data issues** – Missing values, inconsistent text, multi-value fields  
-4. **Cleaning data** – Applied string functions, casting, and formatting  
-5. **Normalize recipes/toppings** – Broke down multi-value fields into atomic values  
-6. **Answer case study questions** – Wrote SQL queries to derive insights  
-7. **Document findings** – Summarized results in structured format  
+1. Understand the schema
+- Reviewed the Entity Relationship Diagram (ERD) and table structures to comprehend how customer_orders, runner_orders, runners, pizza_names, 
+  pizza_recipes, and pizza_toppings are related. This helped identify the joins required for analysis.
+  <img width="359" height="161" alt="image" src="https://github.com/user-attachments/assets/b3dd9d21-0f7b-4d70-afbb-4bc44f5d037c" />
 
+2. Identify data issues
+- Examined each table for missing values, inconsistent text formats, multi-value fields (like toppings, exclusions, extras), and anomalies in date,
+  time, distance, and duration columns that could affect analysis.
+3. Cleaning data
+ - Performed cleaning in Excel before uploading to MySQL. This included splitting combined date-time fields into separate date and time columns, standardizing distance and
+   duration by removing text like km and minutes, and replacing blanks, nulls, and NaN values with consistent placeholders.
+4. Normalize recipes/toppings
+ - Broke down multi-value fields into atomic values for easier aggregation. Ensured toppings, extras, and exclusions were consistently
+   represented across orders to allow accurate calculation of ingredient usage and pizza metrics.
+5. Answer case study questions
+- Wrote SQL queries to generate insights on pizza metrics, runner performance, customer patterns, and ingredient optimization. Verified outputs
+  against expected business scenarios to ensure accuracy.
+6. Document findings
+- Summarized the cleaned data and query results in a structured format. This documentation can guide business decisions and provide a foundation for
+  future analysis without needing to re-run all queries.
 ---
